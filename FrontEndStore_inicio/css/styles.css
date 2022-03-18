@@ -20,7 +20,7 @@ html {
 
   /* globales */
   body {
-      background-color: var(--primario);
+      background-color: var(--negro);
       font-size: 1.6rem;
       line-height: 1.5;
   }
@@ -54,4 +54,59 @@ html {
   }
   h3 {
       font-size: 2.4rem;
+  }
+
+  /* header */
+  .header {
+      display: flex;
+      justify-content: center;
+  }
+  /* footer */
+  .footer {
+      background-color: var(--primarioOscuro);
+      padding: 1rem 0;
+      margin-top: 2rem;                
+  }
+  .footer__texto {
+    font-family: var(--fuentePrincipal);  
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  .header__logo {
+      margin: 3rem 0;
+  }
+  .navegacion {
+      background-color: var(--primarioOscuro);
+      padding: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+  }
+  .navegacion__enlace {
+      font-family: var(--fuentePrincipal);
+      color: var(--blanco);
+      font-size: 3rem;
+  }
+
+  .navegacion__enlace--activo,
+  .navegacion__enlace:hover {
+      color: var(--secundario);
+  }
+
+  /* productos */
+  .producto {
+
+  }
+  .producto__imagen {
+
+  }
+  .producto__informacion {
+
+  }
+  .producto__nombres {
+
+  }
+  .producto__precio {
+      
   }
