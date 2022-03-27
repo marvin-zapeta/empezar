@@ -94,7 +94,7 @@ html {
       color: var(--secundario);
   }
 
-  /* grid */
+  /** grid **/
   .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -108,18 +108,21 @@ html {
 
   /* productos */
   .producto {
-    background-color: var(--negro);        
-    padding: 1rem;
+      background-color: var(--negro);
+      padding: 1rem;
   }
   .producto__imagen {
     width: 100%;
   }
-  .producto__nombre {
-      font-size: 4rem;
+  .producto__informacion {
+
+  }
+  .producto__nombres {
+    font-size: 4rem;
   }
   .producto__precio {
-      font-size: 2.8rem;
-      color: var(--secundario);
+    font-size: 2.8rem;  
+    color: var(--secundario);
   }
   .producto__nombre,
   .producto__precio {
@@ -128,3 +131,26 @@ html {
       text-align: center;
       line-height: 1.2;
   }
+
+  /** graficos **/
+  .grafico {
+      min-height: 30rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1 /  3;
+  }
+  .grafico--camisas {
+      grid-row: 2 / 3;
+      background-image: url(../img/grafico1.jpg);
+  }
+  .grafico--node {
+      background-image: url(../img/grafico2.jpg);
+      grid-row: 8 / 9;
+  }
+
+  @media (min-width: 768px) {
+      .grafico--node {
+          grid-row: 5 / 6;
+          grid-column: 2 / 4;
+      }
+ }
